@@ -1502,14 +1502,14 @@
 
   .iphone-pro-max .text-wrapper-9 {
     position: absolute;
-    top: 51px;
-    left: 111px;
-    font-family: "Poppins-Light", Helvetica;
-    font-weight: 300;
-    color: #606060;
-    font-size: 5.5px;
+    top: 1692px;
+    left: 140px;
+    font-family: "Inter-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 13.3px;
     letter-spacing: 0;
-    line-height: normal;
+    line-height: normal;  
   }
 
   .iphone-pro-max .div-wrapper {

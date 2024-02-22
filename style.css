@@ -972,6 +972,495 @@
 }
 
 
+/* 태블릿 UI는 기본적으로 화면에 보이지 않습니다. */
+.ipad-pro {
+  display: none;
+}
+
+/* 스크린 너비 최대 430px까지(430px이하) 한정하여 스타일 적용 */
+@media screen and (max-width: 1040px) {
+  .desktop {
+    display: none;
+  }
+  .iphone-pro-max {
+    display: none;
+  }
+
+  .ipad-pro{
+    display: block; 
+    box-sizing: border-box;
+  }
+
+  .ipad-pro {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%; 
+    /* width가 100%면 반응형으로 동작해야하는 것 아닌가? */
+  }
+  
+  .ipad-pro .div {
+    background-color: #ffffff;
+    overflow: hidden;
+    width: 964px;
+    height: 1637px;
+    position: relative;
+  }
+  
+  .ipad-pro .frame {
+    position: absolute;
+    width: 904px;
+    height: 45px;
+    top: 38px;
+    left: 60px;
+  }
+  
+  .ipad-pro .naviigation {
+    display: flex;
+    width: 904px;
+    align-items: center;
+    gap: 123px;
+    position: relative;
+  }
+  
+  .ipad-pro .logo {
+    position: relative;
+    width: 147px;
+    height: 44.72px;
+  }
+  
+  .ipad-pro .logo-2 {
+    position: relative;
+    width: 149px;
+    height: 45px;
+  }
+  
+  .ipad-pro .MENTA-lcare {
+    position: absolute;
+    top: 10px;
+    left: 57px;
+    font-family: "Crimson Text", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 15.8px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .ipad-pro .text-wrapper {
+    font-weight: 700;
+  }
+  
+  .ipad-pro .span {
+    font-family: "Crimson Text", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 15.8px;
+    letter-spacing: 0;
+  }
+  
+  .ipad-pro .img {
+    position: absolute;
+    width: 46px;
+    height: 45px;
+    top: 0;
+    left: 0;
+  }
+  
+  .ipad-pro .pages {
+    display: flex;
+    align-items: flex-start;
+    gap: 60px;
+    position: relative;
+    flex: 1;
+    flex-grow: 1;
+  }
+  
+  .ipad-pro .div-2 {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    flex: 0 0 auto;
+  }
+  
+  .ipad-pro .text-wrapper-2 {
+    position: relative;
+    width: 44.04px;
+    margin-top: -1px;
+    font-family: "Inter", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 15.8px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .ipad-pro .rectangle {
+    position: relative;
+    width: 39px;
+    height: 4.25px;
+    background-color: #000000;
+    border-radius: 7px;
+  }
+  
+  .ipad-pro .text-wrapper-3 {
+    position: relative;
+    width: fit-content;
+    margin-top: -1px;
+    font-family: "Inter", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 15.8px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .ipad-pro .rectangle-2 {
+    position: relative;
+    width: 39px;
+    height: 4.25px;
+    background-color: #000000;
+    border-radius: 7px;
+    opacity: 0;
+  }
+  
+  .ipad-pro .CTA {
+    all: unset;
+    box-sizing: border-box;
+    display: flex;
+    width: 113px;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px 31px;
+    position: relative;
+    border-radius: 4px;
+    overflow: hidden;
+    border: 1px solid;
+    border-color: #000000;
+    background: linear-gradient(
+      180deg,
+      rgba(221, 211, 239, 0.55) 0%,
+      rgb(252.75, 216.75, 255) 41.67%,
+      rgb(178, 224, 254) 100%
+    );
+  }
+  
+  .ipad-pro .frame-2 {
+    display: flex;
+    flex-direction: column;
+    width: 837px;
+    align-items: flex-start;
+    gap: 15px;
+    position: absolute;
+    top: 187px;
+    left: 67px;
+  }
+  
+  .ipad-pro .p {
+    position: relative;
+    align-self: stretch;
+    margin-top: -1px;
+    font-family: "Poppins", Helvetica;
+    font-weight: 500;
+    color: #000000;
+    font-size: 58.1px;
+    letter-spacing: 0;
+    line-height: 68.5px;
+  }
+  
+  .ipad-pro .text-wrapper-4 {
+    position: relative;
+    align-self: stretch;
+    font-family: "Inter", Helvetica;
+    font-weight: 300;
+    color: #000000;
+    font-size: 19.4px;
+    letter-spacing: 0.78px;
+    line-height: 27.7px;
+  }
+  
+  .ipad-pro .div-wrapper {
+    all: unset;
+    box-sizing: border-box;
+    display: inline-flex;
+    gap: 12.11px;
+    padding: 12.11px 37.56px;
+    position: relative;
+    flex: 0 0 auto;
+    border-radius: 4.85px;
+    border: 1.21px solid;
+    background: linear-gradient(
+      180deg,
+      rgba(221, 211, 239, 0.55) 0%,
+      rgb(252.75, 216.75, 255) 41.67%,
+      rgb(178, 224, 254) 100%
+    );
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-color: #000000;
+  }
+  
+  .ipad-pro .text-wrapper-5 {
+    position: relative;
+    width: fit-content;
+    margin-top: -1.21px;
+    font-family: "Inter", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 19.1px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .ipad-pro .overlap {
+    position: absolute;
+    width: 941px;
+    height: 560px;
+    top: 563px;
+    left: 23px;
+  }
+  
+  .ipad-pro .rectangle-3 {
+    position: absolute;
+    width: 941px;
+    height: 335px;
+    top: 0;
+    left: 0;
+    background-color: #000000;
+  }
+  
+  .ipad-pro .frame-3 {
+    display: flex;
+    width: 876px;
+    align-items: center;
+    justify-content: center;
+    gap: 55.3px;
+    top: 82px;
+    position: absolute;
+    left: 21px;
+  }
+  
+  .ipad-pro .bausch-lomb-svg {
+    position: relative;
+    width: 200.26px;
+    height: 18.89px;
+  }
+  
+  .ipad-pro .cigna-healthcare-svg {
+    position: relative;
+    width: 83.01px;
+    height: 77.63px;
+  }
+  
+  .ipad-pro .otsuka {
+    position: relative;
+    width: 192.23px;
+    height: 74.01px;
+  }
+  
+  .ipad-pro .medical-news-today {
+    position: relative;
+    width: 200.26px;
+    height: 16.82px;
+  }
+  
+  .ipad-pro .frame-4 {
+    width: 896px;
+    height: 364px;
+    top: 196px;
+    position: absolute;
+    left: 21px;
+  }
+  
+  .ipad-pro .eye {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 1137px;
+    left: 67px;
+  }
+  
+  .ipad-pro .text-wrapper-6 {
+    position: absolute;
+    top: 1140px;
+    left: 113px;
+    font-family: "Inter", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 18.1px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .ipad-pro .overlap-wrapper {
+    position: absolute;
+    width: 964px;
+    height: 178px;
+    top: 1236px;
+    left: -3px;
+  }
+  
+  .ipad-pro .overlap-group {
+    position: relative;
+    height: 177px;
+  }
+  
+  .ipad-pro .background {
+    position: absolute;
+    width: 964px;
+    height: 177px;
+    top: 0;
+    left: 0;
+  }
+  
+  .ipad-pro .rectangle-4 {
+    position: absolute;
+    width: 958px;
+    height: 177px;
+    top: 0;
+    left: 0;
+    border-radius: 26.47px;
+    background: linear-gradient(
+      180deg,
+      rgba(221, 211, 239, 0.55) 0.31%,
+      rgb(241, 225, 242) 41.13%,
+      rgba(219.55, 224.68, 246.16, 0.71) 61.32%,
+      rgba(174, 224, 255, 0.13) 100%
+    );
+  }
+  
+  .ipad-pro .vector {
+    width: 659px;
+    height: 128px;
+    left: 253px;
+    position: absolute;
+    top: 0;
+  }
+  
+  .ipad-pro .vector-2 {
+    width: 405px;
+    height: 102px;
+    left: 559px;
+    position: absolute;
+    top: 0;
+  }
+  
+  .ipad-pro .subscribe-to-our {
+    position: absolute;
+    top: 39px;
+    left: 254px;
+    font-family: "Poppins", Helvetica;
+    font-weight: 500;
+    color: #000000;
+    font-size: 32.8px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .ipad-pro .rectangle-5 {
+    position: absolute;
+    width: 367px;
+    height: 33px;
+    top: 95px;
+    left: 242px;
+    background-color: #ffffff;
+    border-radius: 4px;
+    border: 1px solid;
+    border-color: #0000006b;
+  }
+  
+  .ipad-pro .text-wrapper-7 {
+    position: absolute;
+    top: 101px;
+    left: 254px;
+    font-family: "Poppins", Helvetica;
+    font-weight: 300;
+    color: #606060;
+    font-size: 12.8px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .ipad-pro .button {
+    all: unset;
+    box-sizing: border-box;
+    display: flex;
+    width: 118px;
+    height: 38px;
+    gap: 11.5px;
+    padding: 11.5px 35.64px;
+    position: absolute;
+    top: 92px;
+    left: 626px;
+    background-color: #0c0c0c;
+    border-radius: 4.6px;
+    border: 1.15px solid;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-color: #000000;
+  }
+  
+  .ipad-pro .text-wrapper-8 {
+    position: relative;
+    width: fit-content;
+    margin-top: -3.15px;
+    margin-bottom: -0.85px;
+    margin-left: -3.5px;
+    margin-right: -3.5px;
+    font-family: "Inter", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 16.1px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+  .ipad-pro .naviigation-2 {
+    display: flex;
+    width: 879px;
+    align-items: center;
+    gap: 250px;
+    position: absolute;
+    top: 1460px;
+    left: 60px;
+  }
+  
+  .ipad-pro .pages-2 {
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 60px;
+    position: relative;
+    flex: 0 0 auto;
+  }
+  
+  .ipad-pro .frame-5 {
+    position: absolute;
+    width: 118px;
+    height: 29px;
+    top: 1551px;
+    left: 57px;
+  }
+  
+  .ipad-pro .text-wrapper-9 {
+    position: absolute;
+    top: 1540px;
+    left: 775px;
+    font-family: "Inter", Helvetica;
+    font-weight: 400;
+    color: #00000091;
+    font-size: 15.8px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+}
+
 
 /* 모바일 UI는 기본적으로 화면에 보이지 않습니다. */
 .iphone-pro-max {
@@ -983,6 +1472,9 @@
 
   /* 모바일 화면이 보일 때는 데스크탑 UI는 보이지 않습니다. */
   .desktop {
+    display: none;
+  }
+  .ipad-pro {
     display: none;
   }
 

@@ -978,7 +978,7 @@
 }
 
 /* 스크린 너비 최대 430px까지(430px이하) 한정하여 스타일 적용 */
-@media screen and (max-width: 1040px) {
+@media screen and (min-width: 431px) and (max-width: 1040px) {
   .desktop {
     display: none;
   }

@@ -423,7 +423,7 @@
 .desktop .element {
   position: absolute;
   width: 59px;
-  top: 20px;
+  top: -20px;
   left: 0;
   font-family: "Inter-SemiBold", Helvetica;
   font-weight: 600;
@@ -469,7 +469,7 @@
 .desktop .p {
   position: absolute;
   width: 558px;
-  top: 245px;
+  top: 270px;
   left: 0;
   font-family: "Inter-Light", Helvetica;
   font-weight: 300;
@@ -481,7 +481,7 @@
 
 .desktop .text-wrapper-14 {
   position: absolute;
-  width: 619px;
+  width: 580px;
   top: 93px;
   left: 0;
   font-family: "Poppins-Medium", Helvetica;

@@ -1229,14 +1229,14 @@
   .iphone-pro-max .p {
 
     position: absolute;
-    width: 330px;
-    top: 130px;
+    width: 216px;
+    top: 18px;
     left: 0;
     font-family: "Roboto-Regular", Helvetica;
     font-weight: 400;
     color: #42445d;
-    font-size: 13.1px;
-    letter-spacing: 0.04em;
+    font-size: 9.1px;
+    letter-spacing: 0;
     line-height: 13.6px;
   }
 

@@ -173,12 +173,18 @@
   left: 1px;
   border-radius: 4.6px;
   overflow: hidden;
-  border: 1.15px solid;
-  border-color: #000000;
+  border: 1.15px solid transparent;
   background: linear-gradient(180deg,
       rgba(221, 211, 239, 0.55) 0%,
       rgb(252.75, 216.75, 255) 41.67%,
-      rgb(178, 224, 254) 100%);
+      rgb(101, 193, 253) 100%),
+      
+      linear-gradient(180deg,
+      rgba(217, 207, 237, 1) 0%,
+      rgb(249, 179, 255) 41.67%,
+      rgb(178, 224, 254) 100%);;
+  background-origin: border-box;
+  background-clip: content-box, border-box;
 }
 
 .desktop .text-wrapper-4 {
@@ -720,7 +726,7 @@
   position: absolute;
   width: 350px;
   height: 50px;
-  top: 370px;
+  top: 385px;
   left: 25px;
 }
 
@@ -762,7 +768,7 @@
   position: absolute;
   width: 350px;
   height: 50px;
-  top: 370px;
+  top: 385px;
   left: 22px;
 }
 
@@ -982,12 +988,13 @@
   .desktop {
     display: none;
   }
+
   .iphone-pro-max {
     display: none;
   }
 
-  .ipad-pro{
-    display: block; 
+  .ipad-pro {
+    display: block;
     box-sizing: border-box;
   }
 
@@ -996,10 +1003,10 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    width: 100%; 
+    width: 100%;
     /* width가 100%면 반응형으로 동작해야하는 것 아닌가? */
   }
-  
+
   .ipad-pro .div {
     background-color: #ffffff;
     overflow: hidden;
@@ -1007,7 +1014,7 @@
     height: 1637px;
     position: relative;
   }
-  
+
   .ipad-pro .frame {
     position: absolute;
     width: 904px;
@@ -1015,7 +1022,7 @@
     top: 38px;
     left: 60px;
   }
-  
+
   .ipad-pro .naviigation {
     display: flex;
     width: 904px;
@@ -1023,19 +1030,19 @@
     gap: 123px;
     position: relative;
   }
-  
+
   .ipad-pro .logo {
     position: relative;
     width: 147px;
     height: 44.72px;
   }
-  
+
   .ipad-pro .logo-2 {
     position: relative;
     width: 149px;
     height: 45px;
   }
-  
+
   .ipad-pro .MENTA-lcare {
     position: absolute;
     top: 10px;
@@ -1047,11 +1054,11 @@
     letter-spacing: 0;
     line-height: normal;
   }
-  
+
   .ipad-pro .text-wrapper {
     font-weight: 700;
   }
-  
+
   .ipad-pro .span {
     font-family: "Crimson Text", Helvetica;
     font-weight: 400;
@@ -1059,7 +1066,7 @@
     font-size: 15.8px;
     letter-spacing: 0;
   }
-  
+
   .ipad-pro .img {
     position: absolute;
     width: 46px;
@@ -1067,7 +1074,7 @@
     top: 0;
     left: 0;
   }
-  
+
   .ipad-pro .pages {
     display: flex;
     align-items: flex-start;
@@ -1076,7 +1083,7 @@
     flex: 1;
     flex-grow: 1;
   }
-  
+
   .ipad-pro .div-2 {
     display: inline-flex;
     flex-direction: column;
@@ -1084,7 +1091,7 @@
     position: relative;
     flex: 0 0 auto;
   }
-  
+
   .ipad-pro .text-wrapper-2 {
     position: relative;
     width: 44.04px;
@@ -1096,7 +1103,7 @@
     letter-spacing: 0;
     line-height: normal;
   }
-  
+
   .ipad-pro .rectangle {
     position: relative;
     width: 39px;
@@ -1104,7 +1111,7 @@
     background-color: #000000;
     border-radius: 7px;
   }
-  
+
   .ipad-pro .text-wrapper-3 {
     position: relative;
     width: fit-content;
@@ -1116,7 +1123,7 @@
     letter-spacing: 0;
     line-height: normal;
   }
-  
+
   .ipad-pro .rectangle-2 {
     position: relative;
     width: 39px;
@@ -1125,7 +1132,7 @@
     border-radius: 7px;
     opacity: 0;
   }
-  
+
   .ipad-pro .CTA {
     all: unset;
     box-sizing: border-box;
@@ -1140,14 +1147,12 @@
     overflow: hidden;
     border: 1px solid;
     border-color: #000000;
-    background: linear-gradient(
-      180deg,
-      rgba(221, 211, 239, 0.55) 0%,
-      rgb(252.75, 216.75, 255) 41.67%,
-      rgb(178, 224, 254) 100%
-    );
+    background: linear-gradient(180deg,
+        rgba(221, 211, 239, 0.55) 0%,
+        rgb(252.75, 216.75, 255) 41.67%,
+        rgb(178, 224, 254) 100%);
   }
-  
+
   .ipad-pro .frame-2 {
     display: flex;
     flex-direction: column;
@@ -1158,7 +1163,7 @@
     top: 187px;
     left: 67px;
   }
-  
+
   .ipad-pro .p {
     position: relative;
     align-self: stretch;
@@ -1170,7 +1175,7 @@
     letter-spacing: 0;
     line-height: 68.5px;
   }
-  
+
   .ipad-pro .text-wrapper-4 {
     position: relative;
     align-self: stretch;
@@ -1181,7 +1186,7 @@
     letter-spacing: 0.78px;
     line-height: 27.7px;
   }
-  
+
   .ipad-pro .div-wrapper {
     all: unset;
     box-sizing: border-box;
@@ -1192,18 +1197,16 @@
     flex: 0 0 auto;
     border-radius: 4.85px;
     border: 1.21px solid;
-    background: linear-gradient(
-      180deg,
-      rgba(221, 211, 239, 0.55) 0%,
-      rgb(252.75, 216.75, 255) 41.67%,
-      rgb(178, 224, 254) 100%
-    );
+    background: linear-gradient(180deg,
+        rgba(221, 211, 239, 0.55) 0%,
+        rgb(252.75, 216.75, 255) 41.67%,
+        rgb(178, 224, 254) 100%);
     align-items: center;
     justify-content: center;
     overflow: hidden;
     border-color: #000000;
   }
-  
+
   .ipad-pro .text-wrapper-5 {
     position: relative;
     width: fit-content;
@@ -1215,7 +1218,7 @@
     letter-spacing: 0;
     line-height: normal;
   }
-  
+
   .ipad-pro .overlap {
     position: absolute;
     width: 941px;
@@ -1223,7 +1226,7 @@
     top: 563px;
     left: 23px;
   }
-  
+
   .ipad-pro .rectangle-3 {
     position: absolute;
     width: 941px;
@@ -1232,7 +1235,7 @@
     left: 0;
     background-color: #000000;
   }
-  
+
   .ipad-pro .frame-3 {
     display: flex;
     width: 876px;
@@ -1243,31 +1246,31 @@
     position: absolute;
     left: 21px;
   }
-  
+
   .ipad-pro .bausch-lomb-svg {
     position: relative;
     width: 200.26px;
     height: 18.89px;
   }
-  
+
   .ipad-pro .cigna-healthcare-svg {
     position: relative;
     width: 83.01px;
     height: 77.63px;
   }
-  
+
   .ipad-pro .otsuka {
     position: relative;
     width: 192.23px;
     height: 74.01px;
   }
-  
+
   .ipad-pro .medical-news-today {
     position: relative;
     width: 200.26px;
     height: 16.82px;
   }
-  
+
   .ipad-pro .frame-4 {
     width: 896px;
     height: 364px;
@@ -1275,7 +1278,7 @@
     position: absolute;
     left: 21px;
   }
-  
+
   .ipad-pro .eye {
     position: absolute;
     width: 30px;
@@ -1283,7 +1286,7 @@
     top: 1137px;
     left: 67px;
   }
-  
+
   .ipad-pro .text-wrapper-6 {
     position: absolute;
     top: 1140px;
@@ -1295,7 +1298,7 @@
     letter-spacing: 0;
     line-height: normal;
   }
-  
+
   .ipad-pro .overlap-wrapper {
     position: absolute;
     width: 964px;
@@ -1303,12 +1306,12 @@
     top: 1236px;
     left: -3px;
   }
-  
+
   .ipad-pro .overlap-group {
     position: relative;
     height: 177px;
   }
-  
+
   .ipad-pro .background {
     position: absolute;
     width: 964px;
@@ -1316,7 +1319,7 @@
     top: 0;
     left: 0;
   }
-  
+
   .ipad-pro .rectangle-4 {
     position: absolute;
     width: 958px;
@@ -1324,15 +1327,13 @@
     top: 0;
     left: 0;
     border-radius: 26.47px;
-    background: linear-gradient(
-      180deg,
-      rgba(221, 211, 239, 0.55) 0.31%,
-      rgb(241, 225, 242) 41.13%,
-      rgba(219.55, 224.68, 246.16, 0.71) 61.32%,
-      rgba(174, 224, 255, 0.13) 100%
-    );
+    background: linear-gradient(180deg,
+        rgba(221, 211, 239, 0.55) 0.31%,
+        rgb(241, 225, 242) 41.13%,
+        rgba(219.55, 224.68, 246.16, 0.71) 61.32%,
+        rgba(174, 224, 255, 0.13) 100%);
   }
-  
+
   .ipad-pro .vector {
     width: 659px;
     height: 128px;
@@ -1340,7 +1341,7 @@
     position: absolute;
     top: 0;
   }
-  
+
   .ipad-pro .vector-2 {
     width: 405px;
     height: 102px;
@@ -1348,7 +1349,7 @@
     position: absolute;
     top: 0;
   }
-  
+
   .ipad-pro .subscribe-to-our {
     position: absolute;
     top: 39px;
@@ -1360,7 +1361,7 @@
     letter-spacing: 0;
     line-height: normal;
   }
-  
+
   .ipad-pro .rectangle-5 {
     position: absolute;
     width: 367px;
@@ -1372,7 +1373,7 @@
     border: 1px solid;
     border-color: #0000006b;
   }
-  
+
   .ipad-pro .text-wrapper-7 {
     position: absolute;
     top: 101px;
@@ -1384,7 +1385,7 @@
     letter-spacing: 0;
     line-height: normal;
   }
-  
+
   .ipad-pro .button {
     all: unset;
     box-sizing: border-box;
@@ -1404,7 +1405,7 @@
     overflow: hidden;
     border-color: #000000;
   }
-  
+
   .ipad-pro .text-wrapper-8 {
     position: relative;
     width: fit-content;
@@ -1420,7 +1421,7 @@
     line-height: normal;
     white-space: nowrap;
   }
-  
+
   .ipad-pro .naviigation-2 {
     display: flex;
     width: 879px;
@@ -1430,7 +1431,7 @@
     top: 1460px;
     left: 60px;
   }
-  
+
   .ipad-pro .pages-2 {
     display: inline-flex;
     align-items: flex-start;
@@ -1438,7 +1439,7 @@
     position: relative;
     flex: 0 0 auto;
   }
-  
+
   .ipad-pro .frame-5 {
     position: absolute;
     width: 118px;
@@ -1446,7 +1447,7 @@
     top: 1551px;
     left: 57px;
   }
-  
+
   .ipad-pro .text-wrapper-9 {
     position: absolute;
     top: 1540px;
@@ -1458,7 +1459,7 @@
     letter-spacing: 0;
     line-height: normal;
   }
-  
+
 }
 
 
@@ -1474,6 +1475,7 @@
   .desktop {
     display: none;
   }
+
   .ipad-pro {
     display: none;
   }
@@ -2001,7 +2003,7 @@
     color: #000000;
     font-size: 13.3px;
     letter-spacing: 0;
-    line-height: normal;  
+    line-height: normal;
   }
 
   .iphone-pro-max .div-wrapper {
@@ -2157,7 +2159,7 @@
     top: 0;
     right: 0;
     z-index: 999;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0, 0, 0, 0.5);
 
     display: flex;
     flex-direction: row;
@@ -2165,14 +2167,14 @@
 
     width: 100%;
   }
-  
+
   .nav .div {
     background-color: #ffffff;
     width: 314px;
     height: 1949px;
     position: relative;
   }
-  
+
   .nav .pages {
     display: flex;
     width: 202px;
@@ -2183,7 +2185,7 @@
     flex-direction: column;
     align-items: flex-start;
   }
-  
+
   .nav .div-2 {
     display: inline-flex;
     position: relative;
@@ -2191,7 +2193,7 @@
     flex-direction: column;
     align-items: flex-start;
   }
-  
+
   .nav .text-wrapper {
     position: relative;
     width: 44.04px;
@@ -2203,7 +2205,7 @@
     letter-spacing: 0;
     line-height: normal;
   }
-  
+
   .nav .rectangle {
     position: relative;
     width: 39px;
@@ -2211,7 +2213,7 @@
     background-color: #000000;
     border-radius: 7px;
   }
-  
+
   .nav .home {
     position: relative;
     width: fit-content;
@@ -2223,7 +2225,7 @@
     letter-spacing: 0;
     line-height: normal;
   }
-  
+
   .nav .rectangle-2 {
     position: relative;
     width: 39px;
@@ -2232,7 +2234,7 @@
     border-radius: 7px;
     opacity: 0;
   }
-  
+
   .nav .vector {
     position: absolute;
     width: 26px;
